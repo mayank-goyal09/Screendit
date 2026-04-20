@@ -1,0 +1,7 @@
+streamlit
+sentence-transformers
+beautifulsoup4
+spacy
+requests
+scikit-learn
+plotly
