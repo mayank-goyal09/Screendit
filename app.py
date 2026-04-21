@@ -116,7 +116,17 @@ st.markdown("""
 @st.cache_resource(show_spinner="Initializing AI Engine...")
 def load_resources():
     model = SentenceTransformer('BAAI/bge-m3')
-    nlp = spacy.load("en_core_web_sm")
+    try:
+        nlp = spacy.load("en_core_web_sm")
+    except OSError:
+        import subprocess
+        import sys
+        import os
+        # Bypass 'Permission denied' by downloading to a local, writable directory in the repo
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz", "-t", "local_packages"])
+        sys.path.insert(0, os.path.abspath("local_packages"))
+        import en_core_web_sm
+        nlp = en_core_web_sm.load()
     return model, nlp
 
 model, nlp = load_resources()
