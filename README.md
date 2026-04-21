@@ -11,3 +11,9 @@
 ![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
 
 <br/>
+
+[![🚀 Live Demo](https://img.shields.io/badge/🚀_LIVE_DEMO-Screendit_AI-8e44ad?style=for-the-badge&labelColor=0c1445)](https://screendit-project.streamlit.app/)
+[![GitHub Stars](https://img.shields.io/github/stars/mayank-goyal09/Screendit?style=for-the-badge&color=ffd700)](https://github.com/mayank-goyal09/Screendit/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/mayank-goyal09/Screendit?style=for-the-badge&color=87ceeb)](https://github.com/mayank-goyal09/Screendit/network)
+
+<br/>
